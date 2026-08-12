@@ -1,0 +1,151 @@
+supplier_id,supplier_name,city,state,registration_date,supplier_tier,avg_rating,quality_score
+1,Pooja Sharma Traders,Rajkot,Gujarat,2023-01-30,Silver,3.84,0.93
+2,Ravi Patel Traders,Jaipur,Rajasthan,2022-11-24,Bronze,4.44,0.81
+3,Neha Chatterjee Traders,Kochi,Kerala,2022-03-09,Gold,3.47,0.65
+4,Suman Yadav Traders,Bangalore,Karnataka,2022-06-02,Silver,3.3,0.9
+5,Suman Das Traders,Kochi,Kerala,2022-03-06,Silver,4.22,0.85
+6,Priya Sharma Traders,Visakhapatnam,Andhra Pradesh,2023-02-17,Bronze,3.23,0.94
+7,Nisha Bansal Traders,Amritsar,Punjab,2021-10-12,Gold,4.62,0.67
+8,Suresh Patel Traders,Mysore,Karnataka,2021-04-05,Silver,3.51,0.66
+9,Vikas Khan Traders,Patna,Bihar,2023-04-07,Gold,3.72,0.78
+10,Alok Patel Traders,Coimbatore,Tamil Nadu,2022-01-23,Gold,3.93,0.7
+11,Mohit Jain Traders,Indore,Madhya Pradesh,2022-08-15,Gold,4.24,0.65
+12,Rohit Yadav Traders,Bangalore,Karnataka,2023-03-03,Silver,3.7,0.73
+13,Kavita Patel Traders,Bangalore,Karnataka,2022-01-25,Silver,3.98,0.87
+14,Vikas Mehta Traders,Rajkot,Gujarat,2022-01-15,Silver,3.54,0.78
+15,Priya Gupta Traders,Varanasi,Uttar Pradesh,2022-09-16,Silver,4.21,0.62
+16,Rakesh Yadav Traders,Kochi,Kerala,2021-06-17,Silver,4.23,0.66
+17,Mohit Das Traders,Lucknow,Uttar Pradesh,2021-08-13,Silver,3.31,0.93
+18,Rohit Yadav Traders,Jabalpur,Madhya Pradesh,2023-04-22,Gold,4.84,0.88
+19,Manish Khan Traders,Bhopal,Madhya Pradesh,2021-03-09,Silver,3.72,0.63
+20,Ritu Bansal Traders,Mysore,Karnataka,2021-08-06,Silver,4.36,0.75
+21,Mohit Iyer Traders,Nagpur,Maharashtra,2021-05-27,Silver,3.41,0.77
+22,Rakesh Das Traders,Jaipur,Rajasthan,2022-07-06,Silver,3.26,0.92
+23,Nisha Chatterjee Traders,Visakhapatnam,Andhra Pradesh,2022-02-13,Silver,3.64,0.83
+24,Kiran Nair Traders,Chennai,Tamil Nadu,2021-04-04,Bronze,3.73,0.78
+25,Pooja Agarwal Traders,Vijayawada,Andhra Pradesh,2022-10-05,Gold,4.13,0.66
+26,Nisha Gupta Traders,Varanasi,Uttar Pradesh,2022-01-30,Silver,4.85,0.87
+27,Kiran Khan Traders,Coimbatore,Tamil Nadu,2022-07-21,Bronze,4.8,0.91
+28,Varun Patel Traders,Mumbai,Maharashtra,2022-11-30,Bronze,4.22,0.92
+29,Priya Bansal Traders,Ranchi,Jharkhand,2021-04-25,Silver,3.35,0.67
+30,Deepak Sharma Traders,Kolkata,West Bengal,2023-01-10,Bronze,3.28,0.71
+31,Kiran Mehta Traders,Lucknow,Uttar Pradesh,2022-06-04,Bronze,3.86,0.69
+32,Mohit Chaudhary Traders,Vijayawada,Andhra Pradesh,2023-05-12,Silver,4.61,0.72
+33,Suman Agarwal Traders,Meerut,Uttar Pradesh,2022-01-18,Bronze,3.68,0.79
+34,Kiran Sharma Traders,Kochi,Kerala,2022-09-06,Silver,3.44,0.88
+35,Pooja Jain Traders,Mumbai,Maharashtra,2023-06-19,Bronze,3.33,0.95
+36,Rahul Yadav Traders,Gwalior,Madhya Pradesh,2021-03-01,Silver,4.51,0.67
+37,Neha Gupta Traders,Visakhapatnam,Andhra Pradesh,2023-01-20,Silver,3.21,0.89
+38,Alok Agarwal Traders,Bangalore,Karnataka,2021-05-12,Silver,4.4,0.86
+39,Alok Mehta Traders,Mysore,Karnataka,2021-09-29,Silver,4.51,0.63
+40,Nisha Singh Traders,Meerut,Uttar Pradesh,2022-07-07,Bronze,3.81,0.64
+41,Suman Chaudhary Traders,Amritsar,Punjab,2022-02-13,Bronze,4.67,0.82
+42,Vikas Iyer Traders,Rajkot,Gujarat,2022-06-14,Silver,3.76,0.62
+43,Kavita Gupta Traders,Jaipur,Rajasthan,2021-12-13,Gold,3.73,0.71
+44,Kavita Chatterjee Traders,Kochi,Kerala,2021-08-14,Gold,4.44,0.82
+45,Mohit Verma Traders,Amritsar,Punjab,2021-08-23,Gold,4.71,0.77
+46,Suresh Gupta Traders,Delhi,Delhi,2022-06-11,Silver,3.4,0.85
+47,Sunita Singh Traders,Varanasi,Uttar Pradesh,2022-07-07,Gold,4.49,0.8
+48,Ritu Chatterjee Traders,Raipur,Chhattisgarh,2022-04-30,Silver,4.51,0.77
+49,Nisha Singh Traders,Ludhiana,Punjab,2021-04-07,Gold,4.09,0.75
+50,Vikas Kapoor Traders,Vadodara,Gujarat,2022-02-25,Silver,3.24,0.64
+51,Rohit Patel Traders,Allahabad,Uttar Pradesh,2021-03-04,Silver,3.25,0.82
+52,Pooja Yadav Traders,Bhopal,Madhya Pradesh,2021-07-16,Gold,3.73,0.78
+53,Ravi Kapoor Traders,Coimbatore,Tamil Nadu,2021-07-07,Silver,4.74,0.69
+54,Neha Iyer Traders,Jaipur,Rajasthan,2023-04-08,Bronze,3.9,0.86
+55,Pooja Verma Traders,Kochi,Kerala,2022-10-30,Bronze,3.59,0.63
+56,Amit Gupta Traders,Jabalpur,Madhya Pradesh,2023-02-11,Bronze,3.69,0.66
+57,Nisha Nair Traders,Kolkata,West Bengal,2022-05-08,Silver,4.78,0.88
+58,Rohit Mehta Traders,Nagpur,Maharashtra,2022-01-24,Gold,4.28,0.91
+59,Priya Iyer Traders,Nagpur,Maharashtra,2021-10-20,Silver,4.57,0.67
+60,Rakesh Das Traders,Mysore,Karnataka,2022-11-09,Bronze,4.72,0.79
+61,Suman Chaudhary Traders,Chennai,Tamil Nadu,2021-08-11,Bronze,4.57,0.91
+62,Rakesh Das Traders,Visakhapatnam,Andhra Pradesh,2021-03-04,Bronze,3.74,0.64
+63,Rohit Chatterjee Traders,Delhi,Delhi,2022-05-04,Silver,3.59,0.75
+64,Kiran Mehta Traders,Vijayawada,Andhra Pradesh,2021-02-28,Bronze,4.59,0.9
+65,Ankit Gupta Traders,Bangalore,Karnataka,2022-09-02,Gold,3.21,0.78
+66,Kavita Malhotra Traders,Vijayawada,Andhra Pradesh,2021-05-03,Bronze,3.91,0.68
+67,Kavita Chatterjee Traders,Visakhapatnam,Andhra Pradesh,2022-09-01,Gold,3.4,0.72
+68,Nisha Chatterjee Traders,Bangalore,Karnataka,2022-08-02,Silver,4.8,0.71
+69,Priya Singh Traders,Raipur,Chhattisgarh,2022-11-17,Bronze,4.08,0.85
+70,Priya Malhotra Traders,Jaipur,Rajasthan,2021-05-15,Silver,3.82,0.94
+71,Deepak Bansal Traders,Indore,Madhya Pradesh,2023-02-09,Bronze,4.84,0.69
+72,Deepak Chatterjee Traders,Mumbai,Maharashtra,2021-04-13,Gold,4.05,0.71
+73,Kiran Khan Traders,Pune,Maharashtra,2021-05-16,Bronze,3.68,0.61
+74,Neha Yadav Traders,Jodhpur,Rajasthan,2022-01-14,Silver,4.24,0.78
+75,Alok Chaudhary Traders,Coimbatore,Tamil Nadu,2022-09-19,Bronze,3.29,0.7
+76,Mohit Ghosh Traders,Gwalior,Madhya Pradesh,2021-01-09,Silver,4.74,0.68
+77,Rahul Patel Traders,Kochi,Kerala,2023-06-19,Gold,3.45,0.77
+78,Pooja Das Traders,Hyderabad,Telangana,2021-06-09,Silver,4.88,0.68
+79,Suman Bansal Traders,Meerut,Uttar Pradesh,2021-07-28,Silver,4.34,0.87
+80,Priya Ghosh Traders,Vijayawada,Andhra Pradesh,2022-05-16,Silver,3.6,0.85
+81,Rohit Gupta Traders,Raipur,Chhattisgarh,2022-10-12,Silver,3.83,0.82
+82,Rohit Sharma Traders,Lucknow,Uttar Pradesh,2021-12-08,Bronze,4.28,0.79
+83,Priya Mehta Traders,Rajkot,Gujarat,2023-01-30,Silver,3.35,0.89
+84,Nisha Das Traders,Amritsar,Punjab,2021-01-10,Gold,3.75,0.67
+85,Payal Agarwal Traders,Mysore,Karnataka,2022-07-13,Gold,3.27,0.81
+86,Ritu Das Traders,Patna,Bihar,2021-06-01,Silver,4.35,0.61
+87,Rahul Jain Traders,Delhi,Delhi,2023-03-27,Bronze,4.07,0.68
+88,Vikas Singh Traders,Delhi,Delhi,2022-11-30,Silver,4.3,0.66
+89,Vikas Das Traders,Hyderabad,Telangana,2023-06-15,Silver,4.37,0.74
+90,Rakesh Agarwal Traders,Meerut,Uttar Pradesh,2021-08-31,Bronze,4.79,0.65
+91,Ankit Kapoor Traders,Gwalior,Madhya Pradesh,2021-01-26,Gold,3.78,0.64
+92,Suresh Kapoor Traders,Raipur,Chhattisgarh,2023-04-02,Silver,4.77,0.91
+93,Kavita Khan Traders,Allahabad,Uttar Pradesh,2021-06-13,Bronze,3.64,0.83
+94,Manish Verma Traders,Hyderabad,Telangana,2023-05-30,Silver,4.59,0.79
+95,Deepak Jain Traders,Pune,Maharashtra,2021-11-09,Bronze,4.1,0.68
+96,Kavita Yadav Traders,Vijayawada,Andhra Pradesh,2021-01-25,Silver,3.36,0.91
+97,Suresh Khan Traders,Nagpur,Maharashtra,2023-06-05,Gold,4.73,0.82
+98,Priya Jain Traders,Ranchi,Jharkhand,2022-10-19,Silver,3.78,0.72
+99,Alok Bansal Traders,Varanasi,Uttar Pradesh,2021-01-29,Gold,4.43,0.91
+100,Ankit Chatterjee Traders,Lucknow,Uttar Pradesh,2021-09-29,Gold,4.71,0.87
+101,Nisha Jain Traders,Meerut,Uttar Pradesh,2023-01-17,Bronze,4.29,0.63
+102,Anjali Ghosh Traders,Vadodara,Gujarat,2021-04-29,Silver,3.47,0.91
+103,Suman Khan Traders,Visakhapatnam,Andhra Pradesh,2021-02-15,Bronze,4.23,0.6
+104,Kiran Das Traders,Mumbai,Maharashtra,2022-12-05,Bronze,3.37,0.83
+105,Rakesh Singh Traders,Allahabad,Uttar Pradesh,2022-01-08,Silver,3.21,0.66
+106,Varun Bansal Traders,Mysore,Karnataka,2022-10-01,Silver,4.13,0.84
+107,Pooja Chaudhary Traders,Vijayawada,Andhra Pradesh,2022-06-04,Silver,4.31,0.68
+108,Suresh Malhotra Traders,Vadodara,Gujarat,2022-12-15,Silver,4.41,0.68
+109,Suman Kapoor Traders,Chennai,Tamil Nadu,2022-11-12,Bronze,3.75,0.86
+110,Rakesh Mehta Traders,Varanasi,Uttar Pradesh,2022-09-23,Silver,4.3,0.9
+111,Alok Sharma Traders,Nagpur,Maharashtra,2021-11-08,Silver,4.32,0.8
+112,Ritu Bansal Traders,Vadodara,Gujarat,2022-04-22,Silver,3.36,0.73
+113,Suman Ghosh Traders,Varanasi,Uttar Pradesh,2022-04-30,Bronze,3.65,0.69
+114,Rakesh Mehta Traders,Mysore,Karnataka,2022-11-06,Gold,4.85,0.74
+115,Varun Bansal Traders,Agra,Uttar Pradesh,2021-04-06,Bronze,4.72,0.82
+116,Kavita Chaudhary Traders,Ranchi,Jharkhand,2021-08-19,Bronze,4.55,0.78
+117,Amit Verma Traders,Chennai,Tamil Nadu,2021-09-08,Bronze,4.18,0.77
+118,Neha Iyer Traders,Meerut,Uttar Pradesh,2022-03-01,Bronze,3.53,0.85
+119,Suman Malhotra Traders,Visakhapatnam,Andhra Pradesh,2022-05-22,Silver,3.68,0.61
+120,Mohit Sharma Traders,Chennai,Tamil Nadu,2023-02-08,Bronze,4.3,0.66
+121,Pooja Kapoor Traders,Jodhpur,Rajasthan,2021-08-13,Gold,4.8,0.93
+122,Payal Ghosh Traders,Mysore,Karnataka,2022-04-21,Gold,4.76,0.73
+123,Pooja Iyer Traders,Jaipur,Rajasthan,2021-05-17,Bronze,3.23,0.92
+124,Kiran Das Traders,Varanasi,Uttar Pradesh,2022-09-02,Silver,3.93,0.94
+125,Deepak Ghosh Traders,Ranchi,Jharkhand,2022-03-13,Bronze,4.84,0.9
+126,Deepak Mehta Traders,Kochi,Kerala,2023-02-01,Bronze,3.7,0.73
+127,Priya Yadav Traders,Coimbatore,Tamil Nadu,2023-05-11,Silver,4.65,0.71
+128,Kiran Nair Traders,Ranchi,Jharkhand,2022-10-04,Silver,3.49,0.79
+129,Neha Chaudhary Traders,Coimbatore,Tamil Nadu,2021-08-29,Silver,4.79,0.84
+130,Alok Gupta Traders,Bhopal,Madhya Pradesh,2021-05-22,Gold,4.17,0.63
+131,Payal Agarwal Traders,Nagpur,Maharashtra,2022-12-25,Silver,4.25,0.95
+132,Nisha Bansal Traders,Vadodara,Gujarat,2022-07-10,Silver,3.44,0.78
+133,Suman Kapoor Traders,Delhi,Delhi,2022-02-03,Bronze,4.69,0.86
+134,Payal Sharma Traders,Visakhapatnam,Andhra Pradesh,2023-05-28,Bronze,4.38,0.85
+135,Manish Nair Traders,Visakhapatnam,Andhra Pradesh,2021-01-07,Bronze,3.81,0.7
+136,Manish Kapoor Traders,Indore,Madhya Pradesh,2022-07-06,Bronze,4.58,0.88
+137,Anjali Yadav Traders,Kochi,Kerala,2022-05-15,Silver,4.67,0.92
+138,Sunita Sharma Traders,Vadodara,Gujarat,2022-02-03,Silver,4.07,0.78
+139,Manish Mehta Traders,Varanasi,Uttar Pradesh,2023-05-11,Silver,4.56,0.83
+140,Anjali Das Traders,Chennai,Tamil Nadu,2021-01-28,Bronze,4.39,0.88
+141,Ritu Sharma Traders,Visakhapatnam,Andhra Pradesh,2021-03-27,Silver,4.71,0.72
+142,Deepak Mehta Traders,Chennai,Tamil Nadu,2021-02-21,Silver,3.84,0.63
+143,Suman Iyer Traders,Bhopal,Madhya Pradesh,2021-12-01,Silver,4.18,0.61
+144,Manish Khan Traders,Jodhpur,Rajasthan,2023-02-10,Bronze,3.99,0.79
+145,Priya Gupta Traders,Vadodara,Gujarat,2022-04-27,Gold,3.69,0.81
+146,Rohit Jain Traders,Kochi,Kerala,2021-08-18,Silver,3.25,0.61
+147,Mohit Verma Traders,Ranchi,Jharkhand,2023-02-12,Gold,4.6,0.73
+148,Suman Sharma Traders,Jaipur,Rajasthan,2022-09-29,Gold,3.42,0.78
+149,Sunita Patel Traders,Chennai,Tamil Nadu,2022-08-01,Bronze,4.51,0.68
+150,Payal Khan Traders,Coimbatore,Tamil Nadu,2023-02-25,Silver,4.26,0.63
