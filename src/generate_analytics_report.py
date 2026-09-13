@@ -4,10 +4,14 @@ Author: Aman Jain (amanjain-31)
 Repository: https://github.com/amanjain-31/Meesho-Social-Commerce-Analytics-GMV-Retention-CLV-Analysis-
 """
 
+import argparse
 import os
-import pandas as pd
-import numpy as np
+import sys
+from typing import Tuple
+
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 import seaborn as sns
 
 # Set style aesthetics
@@ -17,24 +21,46 @@ plt.rcParams['font.sans-serif'] = 'DejaVu Sans'
 plt.rcParams['axes.edgecolor'] = '#444444'
 plt.rcParams['axes.linewidth'] = 1.2
 
-# File paths
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'raw')
-ASSETS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'assets')
-os.makedirs(ASSETS_DIR, exist_ok=True)
+def load_data(data_dir: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Load raw relational CSV datasets with error handling.
 
-def load_data():
-    print("Loading raw CSV datasets...")
-    customers = pd.read_csv(os.path.join(DATA_DIR, 'customers.csv'))
-    orders = pd.read_csv(os.path.join(DATA_DIR, 'orders.csv'))
-    order_items = pd.read_csv(os.path.join(DATA_DIR, 'order_items.csv'))
-    products = pd.read_csv(os.path.join(DATA_DIR, 'products.csv'))
-    returns = pd.read_csv(os.path.join(DATA_DIR, 'returns.csv'))
-    suppliers = pd.read_csv(os.path.join(DATA_DIR, 'suppliers.csv'))
-    reviews = pd.read_csv(os.path.join(DATA_DIR, 'reviews.csv'))
-    return customers, orders, order_items, products, returns, suppliers, reviews
+    Args:
+        data_dir (str): Directory path containing raw CSV files.
 
-def run_analytics():
-    customers, orders, order_items, products, returns, suppliers, reviews = load_data()
+    Returns:
+        Tuple of pandas DataFrames: (customers, orders, order_items, products, returns, suppliers, reviews)
+    """
+    print(f"Loading raw CSV datasets from '{data_dir}'...")
+    required_files = ['customers.csv', 'orders.csv', 'order_items.csv', 'products.csv', 'returns.csv', 'suppliers.csv', 'reviews.csv']
+    
+    for fname in required_files:
+        fpath = os.path.join(data_dir, fname)
+        if not os.path.isfile(fpath):
+            print(f"[ERROR] Required dataset file missing: '{fpath}'", file=sys.stderr)
+            sys.exit(1)
+            
+    try:
+        customers = pd.read_csv(os.path.join(data_dir, 'customers.csv'))
+        orders = pd.read_csv(os.path.join(data_dir, 'orders.csv'))
+        order_items = pd.read_csv(os.path.join(data_dir, 'order_items.csv'))
+        products = pd.read_csv(os.path.join(data_dir, 'products.csv'))
+        returns = pd.read_csv(os.path.join(data_dir, 'returns.csv'))
+        suppliers = pd.read_csv(os.path.join(data_dir, 'suppliers.csv'))
+        reviews = pd.read_csv(os.path.join(data_dir, 'reviews.csv'))
+        return customers, orders, order_items, products, returns, suppliers, reviews
+    except Exception as e:
+        print(f"[ERROR] Failed to load CSV data: {str(e)}", file=sys.stderr)
+        sys.exit(1)
+
+def run_analytics(data_dir: str, assets_dir: str) -> None:
+    """Execute end-to-end data analytics and plot visual intelligence charts.
+
+    Args:
+        data_dir (str): Input directory containing raw data.
+        assets_dir (str): Output directory for saving generated PNG charts.
+    """
+    os.makedirs(assets_dir, exist_ok=True)
+    customers, orders, order_items, products, returns, suppliers, reviews = load_data(data_dir)
     
     # Date parsing
     orders['order_date'] = pd.to_datetime(orders['order_date'])
@@ -89,7 +115,7 @@ def run_analytics():
     ax1.tick_params(axis='x', rotation=45)
     
     plt.tight_layout()
-    plt.savefig(os.path.join(ASSETS_DIR, 'gmv_monthly_trend.png'), dpi=300)
+    plt.savefig(os.path.join(assets_dir, 'gmv_monthly_trend.png'), dpi=300)
     plt.close()
     
     # CHART 2: Category Revenue & Profitability
@@ -114,7 +140,7 @@ def run_analytics():
                     ha='right', va='center', fontsize=10, color='white', fontweight='bold')
         
     plt.tight_layout()
-    plt.savefig(os.path.join(ASSETS_DIR, 'category_revenue_distribution.png'), dpi=300)
+    plt.savefig(os.path.join(assets_dir, 'category_revenue_distribution.png'), dpi=300)
     plt.close()
 
     # CHART 3: Customer RFM Segmentation
@@ -155,7 +181,7 @@ def run_analytics():
             colors=colors, textprops={'fontsize': 11, 'color': 'white', 'weight': 'bold'})
     plt.title('Customer Base RFM Segmentation Distribution', fontsize=14, fontweight='bold', pad=15)
     plt.tight_layout()
-    plt.savefig(os.path.join(ASSETS_DIR, 'rfm_customer_segmentation.png'), dpi=300)
+    plt.savefig(os.path.join(assets_dir, 'rfm_customer_segmentation.png'), dpi=300)
     plt.close()
 
     # CHART 4: Supplier Return Risk Analysis
@@ -180,7 +206,7 @@ def run_analytics():
     plt.ylabel('Supplier Name', fontsize=11)
     plt.legend(title='Supplier Tier', loc='lower right')
     plt.tight_layout()
-    plt.savefig(os.path.join(ASSETS_DIR, 'supplier_return_risk.png'), dpi=300)
+    plt.savefig(os.path.join(assets_dir, 'supplier_return_risk.png'), dpi=300)
     plt.close()
 
     # CHART 5: Cohort Retention Heatmap
@@ -201,10 +227,22 @@ def run_analytics():
     plt.xlabel('Months Since First Purchase', fontsize=11)
     plt.ylabel('Cohort Month', fontsize=11)
     plt.tight_layout()
-    plt.savefig(os.path.join(ASSETS_DIR, 'retention_cohort_heatmap.png'), dpi=300)
+    plt.savefig(os.path.join(assets_dir, 'retention_cohort_heatmap.png'), dpi=300)
     plt.close()
     
-    print("\n[SUCCESS] Analytics pipeline complete! All visual assets generated in assets/ directory.")
+    plt.close('all')
+    print(f"\n[SUCCESS] Analytics pipeline complete! All visual assets generated in '{assets_dir}' directory.")
+
+def main():
+    default_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'raw')
+    default_assets_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'assets')
+    
+    parser = argparse.ArgumentParser(description="Social Commerce Analytics & Customer Intelligence Pipeline")
+    parser.add_argument('--data-dir', type=str, default=default_data_dir, help="Path to directory containing raw CSV datasets")
+    parser.add_argument('--assets-dir', type=str, default=default_assets_dir, help="Path to directory where output charts will be saved")
+    
+    args = parser.parse_args()
+    run_analytics(data_dir=args.data_dir, assets_dir=args.assets_dir)
 
 if __name__ == '__main__':
-    run_analytics()
+    main()
